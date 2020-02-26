@@ -22,7 +22,7 @@
 		      							<?php echo $user->Message; ?>
 		    								</div>
 												<div class="col-sm-1">
-		      							<?php echo $user->login; ?>
+		      							<?php echo $user->name; ?>
 		    								</div>
 												<div class="col-sm-2">
 		      							<?php echo $user->email; ?>

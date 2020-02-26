@@ -28,7 +28,7 @@ class AdminController extends Controller
 			if($is_manager==1){
 			$requests = DB::table('requests')
 											 ->join('users', 'requests.user_id', '=', 'users.id')
-											 ->select('requests.id', 'requests.subject', 'requests.Message', 'users.login', 'users.email', 'requests.file', 'requests.created_at')
+											 ->select('requests.id', 'requests.subject', 'requests.Message', 'users.name', 'users.email', 'requests.file', 'requests.created_at')
 											 ->simplePaginate(5);
 								 	//		return view('requests.index', ['posts' => $requests]);
 			$page =	view('admin')->with('requests', $requests);
